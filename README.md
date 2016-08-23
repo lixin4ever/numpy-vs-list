@@ -1,8 +1,10 @@
 ## Numpy-vs-list
 Some scripts to compare time cost of basic operation on python built-in list and that on numpy.ndarray. 
 
-## Interpreter
-Python 2.7.12 (64 bits)
+## Settings
+Interpreter: Python 2.7.12 (64 bits)
+Data: 10 million randomly-generated integers ranging from 1 to 10
+Results: operation is peroformed `N` times and results is the average time cost of the N executions. 
 
 ## Operationg system and cpu information
 * OS X 10.10: Intel Core I5-4260U (1.4 GHz)
