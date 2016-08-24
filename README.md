@@ -13,7 +13,7 @@ Some scripts to compare time cost of basic operation on python built-in list and
 
 ## Experiment results
 
-### SUM operation on one-dimensional array (list)
+#### SUM operation on one-dimensional array / list (unit: second)
 OS | `SELF+list` | `SELF+np.ndarray` | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
 --- | --- | --- | --- | --- | --- | ---
 OS X | 1.867 | 2.844 | 0.079 | 1.148 | 0.560 | **0.037**
