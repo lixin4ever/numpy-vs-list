@@ -11,7 +11,7 @@ Some scripts to compare time cost of basic operation on python built-in list and
 * Windows 7: Intel Core I5-4570 (3.2 GHz) 
 * Red Hat 6.4: Intel Xeon E5-2650 (2.6 GHz)
 
-## Experiment results
+## Time costs
 
 #### SUM operation on 1-d array / list 
 OS | `SELF+list` | `SELF+np.ndarray` | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
@@ -22,7 +22,9 @@ Red Hat | 0.296 | 1.354 | 0.055 | 0.994 | 0.478 | **0.027**
 #### LOG operation on 1-d array / list
 OS | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
 --- | --- | --- | --- | ---
-OSX | 3.730 | 4.775 | 0.841 | 0.137
+OS X | 3.730 | 4.775 | 0.841 | **0.137**
+Windows | 1.674 | 2.143 | 0.566 | **0.118**
+Red Hat | 2.935 | 3.431 | 1.115 | **0.460**
 
 Note: `A+B` in the above form means applying methods `A` on the data structure `B`; unit in the form is second
 
