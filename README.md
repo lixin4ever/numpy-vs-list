@@ -18,6 +18,7 @@ OS | `SELF+list` | `SELF+np.ndarray` | `built-in+list` | `built-in+np.ndarray` |
 --- | --- | --- | --- | --- | --- | ---
 OS X | 1.867 | 2.844 | 0.079 | 1.148 | 0.560 | **0.037**
 Windows | 0.288 | 0.989 | 0.046 | 0.768 | 0.384 | **0.015**
+Red Hat | 0.296 | 1.354 | 0.055 | 0.994 | 0.478 | **0.027**
 
 Note: `A+B` in the above form means applying methods `A` on the data structure `B`
 
