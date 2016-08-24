@@ -18,7 +18,7 @@ methods = {0: LOG, 1: np.log}
 
 data = {0: int_list, 1: int_ndarray}
 
-method_name = {0: 'built-in', 1: 'np.ndarray'}
+method_name = {0: 'built-in', 1: 'np.log'}
 
 ds_name = {0: 'list', 1: 'np.ndarray'}
 
@@ -39,4 +39,6 @@ for j in xrange(len(method_name)):
     for k in xrange(len(ds_name)):
         ds = ds_name[k]
         print '%s+%s: %s seconds' % (m_name, ds, time_cost[j][k] / N)
+
+
 

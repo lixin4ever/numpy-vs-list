@@ -15,11 +15,11 @@ int_ndarray = np.array(int_list)
 
 N = 20
 
-methods = {0: SUM, 1: sum, 2: np.array}
+methods = {0: SUM, 1: sum, 2: np.sum}
 
 d = {0: int_list, 1: int_ndarray}
 
-methods_name = {0: 'self implementation', 1: 'built-in', 2: 'np.array'}
+methods_name = {0: 'self implementation', 1: 'built-in', 2: 'np.sum'}
 
 ds_name = {0: 'list', 1: 'np.ndarray'}
 
