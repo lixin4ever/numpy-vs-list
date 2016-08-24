@@ -27,6 +27,13 @@ OS X | 3.730 | 4.775 | 0.841 | **0.137**
 Windows | 1.674 | 2.143 | 0.566 | **0.118**
 Red Hat | 2.935 | 3.431 | 1.115 | **0.460**
 
+#### INNER PRODUCT operation on 1-d array / list
+OS | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
+--- | --- | --- | --- | ---
+OS X | 3.167 | 6.027 | 1.187 | **0.013**
+Windows | 0.881 | 2.800 | 0.806 | **0.009**
+Red Hat | 1.101 | 3.941 | 1.211 | **0.017**
+
 Note: `A+B` in the above form means applying methods `A` on the data structure `B`; unit in the form is second
 
 
