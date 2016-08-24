@@ -16,9 +16,10 @@ Some scripts to compare time cost of basic operation on python built-in list and
 #### SUM operation on 1-d array / list 
 OS | `SELF+list` | `SELF+np.ndarray` | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
 --- | --- | --- | --- | --- | --- | ---
-OS X | 1.867 | 2.844 | 0.079 | 1.148 | 0.560 | **0.037**
-Windows | 0.288 | 0.989 | 0.046 | 0.768 | 0.384 | **0.015**
-Red Hat | 0.296 | 1.354 | 0.055 | 0.994 | 0.478 | **0.027**
+OS X | 2.002 | 3.059 | 0.079 | 1.225 | 0.606 | **0.08**
+Windows | 0.279 | 0.982 | 0.046 | 0.759 | 0.392 | **0.05**
+Red Hat | 0.297 | 1.415 | 0.056 | 1.004 | 0.497 | **0.007**
+
 #### LOG operation on 1-d array / list
 OS | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
 --- | --- | --- | --- | ---
