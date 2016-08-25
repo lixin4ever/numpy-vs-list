@@ -5,8 +5,8 @@ import math
 import numpy as np
 import time
 
-int_list_2d_A = [[random.randint(1, 10) for j in xrange(1000)] for i in xrange(1000)]
-int_list_2d_B = [[random.randint(1, 10) for j in xrange(1000)] for i in xrange(1000)]
+int_list_2d_A = [[random.randint(1, 10) for j in xrange(400)] for i in xrange(400)]
+int_list_2d_B = [[random.randint(1, 10) for j in xrange(400)] for i in xrange(400)]
 
 int_ndarray_2d_A = np.array(int_list_2d_A)
 int_ndarray_2d_B = np.array(int_list_2d_B)
