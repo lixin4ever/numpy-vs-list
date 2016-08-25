@@ -20,17 +20,33 @@ def MAT_MULT(MAT_A, MAT_B):
             c = 0
             for k in xrange(n):
                 c += MAT_A[i][k] * MAT_B[k][j]
-            tmp.append(res)
+            tmp.append(c)
         res.append(tmp)
     return res
 
-assert np.array(MAT_MULT(MAT_A=int_list_2d_A, MAT_B=int_list_2d_B)) == (np.dot(int_ndarray_2d_A, int_ndarray_2d_B))
+def validate(LIST, NDARRAY):
+    res = True
+    height, width = NDARRAY.shape
+    for i in xrange(height):
+        for j in xrange(width):
+            if LIST[i][j] != NDARRAY[i][j]:
+                res = False
+                break
+        if not res:
+            break
+    return res
+
+print 'begin testing...'
+
+assert validate(LIST=MAT_MULT(MAT_A=int_list_2d_A, MAT_B=int_list_2d_B), NDARRAY=np.dot(int_ndarray_2d_A, int_ndarray_2d_B))
+
+print 'pass the result validation!'
 
 methods = {0: MAT_MULT, 1: np.dot}
 
 ds = {0: (int_list_2d_A, int_list_2d_B), 1: (int_ndarray_2d_A, int_ndarray_2d_B)}
 
-method_name = {0: 'built-in', 1: 'ds'}
+method_name = {0: 'built-in', 1: 'np'}
 
 d_name = {0: 'list', 1: 'np.ndarray'}
 
@@ -38,7 +54,7 @@ N = 20
 
 time_cost = np.zeros((len(method_name), len(d_name)))
 
-for i in xrange(N):
+for i in xrange(20):
     for j in xrange(len(methods)):
         f = methods[j]
         for k in xrange(len(ds)):
