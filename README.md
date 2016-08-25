@@ -16,8 +16,8 @@ Some scripts to compare time cost of basic operation on python built-in list and
 #### SUM operation on 1-d array / list 
 OS | `SELF+list` | `SELF+np.ndarray` | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
 --- | --- | --- | --- | --- | --- | ---
-OS X | 2.002 | 3.059 | 0.079 | 1.225 | 0.606 | **0.08**
-Windows | 0.279 | 0.982 | 0.046 | 0.759 | 0.392 | **0.05**
+OS X | 2.002 | 3.059 | 0.079 | 1.225 | 0.606 | **0.008**
+Windows | 0.279 | 0.982 | 0.046 | 0.759 | 0.392 | **0.005**
 Red Hat | 0.297 | 1.415 | 0.056 | 1.004 | 0.497 | **0.007**
 
 #### LOG operation on 1-d array / list
@@ -33,6 +33,13 @@ OS | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
 OS X | 3.167 | 6.027 | 1.187 | **0.013**
 Windows | 0.881 | 2.800 | 0.806 | **0.009**
 Red Hat | 1.101 | 3.941 | 1.211 | **0.017**
+
+#### MATRIX MULTIPLICATION operation on 2-d list / ndarray
+OS | `built-in+list` | `built-in+np.ndarray` | `np+list` | `np+np.ndarray`
+--- | --- | --- | --- | ---
+OS X | 32.753 | 69.669 | 0.114 | **0.095**
+Windows | 5.935 | 31.011 | 0.057 | **0.045**
+Red Hat | 10.877 | 42.495 | 0.0117 | **0.093**
 
 Note: `A+B` in the above form means applying methods `A` on the data structure `B`; unit in the form is second
 
