@@ -3,7 +3,7 @@ Some scripts to compare time cost of basic operation on python built-in list and
 
 ## Settings
 * Interpreter: Python 2.7.12 (64 bits)
-* Data: 10 million integers ranging from 1 to 10 (1-d list / array) and 1K x 1K integers ranging from 1 to 10 (2-d list / array, i.e, matrix), where elements in them are all generated randomly. 
+* Data: 10 million integers ranging from 1 to 10 (1-d list / array) and 400 x 400 integers ranging from 1 to 10 (2-d list / array, i.e, matrix), where elements in them are all generated randomly. 
 * Results: operation is peroformed `N` times and results is the average time cost of the `N` executions. 
 
 ## Operationg system and cpu information
