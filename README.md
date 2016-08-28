@@ -45,8 +45,8 @@ Red Hat | 10.877 | 42.495 | 0.0117 | **0.093**
 OS | `SELF+list` | `SELF+np.ndarray` | `np+list` | `np+np.ndarray`
 --- | --- | --- | --- | ---
 OS X | 0.094 | 0.197 | 0.020 | **0.0004**
-Windows | 5.935 | 31.011 | 0.057 | **0.045**
-Red Hat | 10.877 | 42.495 | 0.0117 | **0.093**
+Windows | 0.02 | 0.084 | 0.013 | **0.0000001 (almost 0!)**
+Red Hat | 0.0353 | 0.116 | 0.020 | **0.0002**
 
 Note: `A+B` in the above form means applying methods `A` on the data structure `B`; unit in the form is second
 
